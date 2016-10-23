@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=""></script>
+
+
+<style>
+input{
+width:200px;
+height:40px;
+margin:10px;
+font-size:18px;
+text-align:center;}
+
+</style>
+</head>
+<body>
+						   
+											   
+			<input type="text" id="e" placeholder="Amount"/><br>
+<input type="text" id="f" placeholder="price"/><br>
+<input type="text" id="g" placeholder="quantity"/><br>
+
+<input type="button" id="calculate" value="Calculate"/> 				   
+
+
+
+
+<p id="r"></p>
+<script>
+                 function hisab(a,b,c){
+				                       var d=(a/b)*c;
+					                   document.getElementById('r').innerHTML= '<p style="color:red">the result is'+d+'</p>';
+									  
+					 
+					                   }
+									   
+									 /* var a=(document.getElementById("e").value);
+									   var b=(document.getElementById("f").value);
+									   var c=(document.getElementById("g").value);
+									   
+									   hisab(a,b,c);*/
+									   
+									  document.getElementById('calculate').addEventListener('click',function (){
+	var a =parseInt(document.getElementById("e").value);
+	var b =parseInt(document.getElementById("f").value);
+	var c =parseInt(document.getElementById("g").value);
+	
+	hisab(a,b,c);
+	
+	});
+									   
+									   
+									 /* var a=10;
+									   var b=20;
+									   var c=30;
+									   hisab(10,20,30);*/
+									   
+			
+
+
+
+	</script>
+
+</body>
+</html>
